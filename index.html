@@ -326,6 +326,10 @@ function toggleCustomDuration(){
 }
 
 function switchMode(m){
+  if(m==='general'){
+    window.location.href='booking.html';
+    return;
+  }
   currentMode=m;
   document.body.setAttribute('data-theme',m);
   document.getElementById('mode-badge').textContent=m==='select'?'ReelOnGo Select':'Standard';
